@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+  <head>
+
+    <link rel="stylesheet" href="css/style.css">
+   <style>
+   body {
+  margin: 20px;
+  padding: 20px 40px;
+  background-image: url("css/images/bgd5.jpg");
+  background-size: cover;
+}
+
+h1 {
+     font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
+h4 {
+    font-family: 'Arvo', serif;
+  text-align: center;
+}
+
+table {
+  border: 4px solid pink;
+  width:100%;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+.qty {
+  width: 100px;
+}
+
+button {
+
+  border: double;
+  border-radius:4px;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:15px;
+ }
+
+.animate-repeat2 {
+  line-height:40px;
+  list-style:none;
+  box-sizing:border-box;
+}
+
+.animate-repeat2.ng-move,
+.animate-repeat2.ng-enter,
+.animate-repeat2.ng-leave {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+.animate-repeat2.ng-leave.ng-leave-active,
+.animate-repeat2.ng-move,
+.animate-repeat2.ng-enter {
+  opacity:0;
+  max-height:0;
+}
+
+.animate-repeat2.ng-leave,
+.animate-repeat2.ng-move.ng-move-active,
+.animate-repeat2.ng-enter.ng-enter-active {
+  opacity:1;
+  max-height:40px;
+}
+
+</style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-animate.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-animate.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="main.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Arvo|Dancing+Script|Kalam" rel="stylesheet">
+  </head>
+
+  <body class="container" ng-controller="myController">
+  <div ng-hide="IsVisible">
+    <h1>Find the right career for you!</h1>
+    <br/>
+    <h4>Search by position: <input type="text" ng-model="searchText"></h4>
+    <br/>
+    <div class="row">
+      <center>
+      <table>
+        <tr>
+            <th><h2>Job Title</h2></th>
+            <th><h2>Description</h2></th>
+        </tr>
+        <tr class="animate-repeat" ng-repeat="item in inventory | filter:searchText | orderBy:'category' ">
+          <td>{{ item.category }}</td>
+          <td>{{ item.description }}</td>
+          <td><button class="btn-primary" ng-click="addItem(item)">APPLY</button></td>
+        </tr>
+      </table>
+      </center>
+     </div>
+
+    <div class="row">
+      <h2>All the jobs you've applied for:</h2>
+      <ul>
+        <li class="animate-repeat" ng-repeat="item in cart | orderBy:'category'">
+          <span>{{ item.category }}</span>
+          <button class="btn-danger btn-xs" ng-click="removeItem(item);">Cancel</button>
+          </br>
+          </br>
+        </li>
+      </ul>
+      <button class="btn-danger" ng-click="clearCart();">Clear Cart</button>
+      <button ng-click="showHide();">Done</button>
+    </div>
+  </div>
+      <div ng-show="IsVisible">
+          Thanks for applying! We will get back to you shortly.
+        <button><a href="index.html">Go back to home</a></button>
+      </div>
+
+  </body>
+</html>

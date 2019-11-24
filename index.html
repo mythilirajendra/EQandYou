@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+    <title>EQandYOU</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Dancing+Script|Kalam|Kaushan+Script|Lobster|Pacifico|Permanent+Marker|Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <!-- font awesome icons -->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+</head>
+<body>
+      <header>
+            <nav class="menu">
+                  <ul class="menu">
+<!--                        <li>-->
+<!--                              <a href="#home"><font size="5">EQ</font></a>-->
+<!--                        </li>-->
+                        <li>
+                              <a href="#stories">Stories</a>
+                        </li>
+                        <li>
+                              <a href="#events">Events</a>
+                        </li>
+                        <li>
+                              <a href="#contribute">Contribute</a>
+                        </li>
+                        <li>
+                              <a href="#contact">Contact</a>
+                        </li>
+                        <li>
+                              <a href="#about">About Us</a>
+                        </li>
+                  </ul>
+                  <a href="#" id="toggle-btn">EQ</a>
+            </nav>
+      </header>
+
+      <!-- home -->
+
+      <a name="about"></a>
+      <div class="section-hero">
+
+            <div class="bg-image"></div>
+            <div class="container">
+            <div class="bg-text">
+              <h1>Welcome!</h1>
+                  <h2>We are all equal here!</h2>
+                  <p>Here at EQandYOU, we take the initiative to support & uplift the so-called "minority" groups. You can join us
+                  in making the world a happy place for people of all skin colors, all genders, all religions, etc.</p>
+            </div>
+            </div>
+      </div>
+      <br><br><br>
+      <!-- overview section -->
+
+      <a name="stories"></a>
+      <div id="stories" class="section">
+<!--            <div class="container">-->
+
+                  <div class="overview-content">
+
+                  <div  ng-app="app3" ng-controller="myCont">
+                        <h2>News, Blogs, Stories & more!</h2><br><br><br><br>
+                        <div id="story"><a href="#story1">Kids make an impact</a>
+                            <p>A group of kids in a school here in San Diego demonstrated how all religions are the same...</p>
+                            <img src="css/images/kidschange.jpg" align="center" />
+                        </div>
+                        <br><br><br>
+                        <div id="story"><a href="#story2">Women rise to the occasion</a>
+                            <p>Gurl Power! Corporate women from all over the world connect through social media to fight against...</p>
+                            <img src="css/images/womenhuggback.jpg" align="center" />
+                        </div>
+                      <br><br><br>
+                      <div id="story"><a href="#story3">#BlackLivesMatter trending after the Pepsi commercial</a>
+                            <p>Netizens from across the globe have revived the Black Lives Matter movement after the controversial Pepsi Ad
+                                starring Kendall Jenner...</p>
+                            <img src="css/images/blacklivesmatter.jpg" align="center" />
+                        </div>
+                      <br><br><br>
+                      <div id="story"><a href="#story4">All we have is Love :)</a>
+                            <p>Love in all forms accepted - The recent Pride movement has gained the support of millions of people...</p>
+                            <img src="css/images/lgbtq2women.jpg" align="center" />
+                        </div>
+                      <br><br><br>
+                      <div id="story"><a href="#story5">Models of all colors and sizes trending</a>
+                            <p>An enormous change can be seen in the way cosmetics and high fashion brands market and advertise...</p>
+                            <img src="css/images/raceswomen.jpg" align="center" />
+                        </div>
+                      <br><br><br>
+
+                  </div>
+
+
+
+                  </div>
+<!--            </div>-->
+      </div>
+      <br><br><br>
+      <!-- about section       -->
+
+
+      <!-- events -->
+      <a name="events"></a>
+      <div id="events" class="section">
+            <div class="container">
+                  <div class="events-content">
+                            <h2>Upcoming Events</h2>
+                            <div>
+                              <h3>Find a event you like, near you!</h3>
+                            <div class="event">
+                              <h4 style="float:left">&#10148;Women Conference, California<br>
+                              <a href="#wc">A conglomeration of empowering women...</a><br><br></h4>
+                                <img src="css/images/allraces.jpg" style="clear:right">
+                            <br><br><br>
+                            </div>
+                            <div class="event">
+                              <h4 style="float:left">&#10148; Senator's speech on racism, Florida<br>
+                                  <a href="#sr">Senator talks about racism still prevailing...</a><br><br></h4>
+                            <img src="css/images/generalevent.jpg" style="clear:right">
+                            <br><br><br>
+                            </div>
+                            <div class="event">
+                              <h4 style="float:left">&#10148; Why LGBTQ+ is the next trend, Pennsylvania<br>
+                              <a href="#lg">Lesbian YouTuber Jessie Paege talks about...</a><br><br></h4>
+                            <img src="css/images/lgbtevent3.jpg" style="clear:right">
+                            <br><br><br>
+                         </div>
+                                <div class="event">
+                            <h4 style="float:left">&#10148; EU Anti-Racism and Diversity Week, Brussels<br>
+                              <a href="#lg">The first-ever EU Anti-Racism and Diversity Week is taking place from 23 to 26 September 2019..</a><br><br></h4>
+                            <img src="css/images/happystrips2.jpg" style="clear:right">
+                            <br><br><br>
+                          </div>
+                            <div class="event">
+                            <h4 style="float:left">&#10148; Volunteer with the UN, (location can be chosen)<br>
+                              <a href="#lg">Opportunity to teach kids from under-developed countries...</a><br><br></h4>
+                            <img src="css/images/happyblackkids.jpg" style="clear:right">
+                            <br><br><br>
+                          </div>
+                            <div class="event">
+                            <h4 style="float:left">&#10148; An all religion ceremony, Chicago<br>
+                              <a href="#lg">An event organized by the Pope, inviting religious leaders from all corners...</a><br><br></h4>
+                            <img src="css/images/religion.jpg" style="clear:right">
+                            <br><br><br>
+                          </div>
+                            <button>Load more</button>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <br><br><br>
+      <!-- contribute -->
+
+      <a name="contribute"></a>
+      <div id="contribute" class="container">
+<!--          <img src="css/images/bettertogether.jpg">-->
+
+          <div class="bg-text">
+                  <a href="#"><h3>&#10148;Support us by donating to our Patreon!</h3></a>  <!-- try using button -->
+                  <h3>&#10148;Subscribe to our newsletter!</h3>
+                  <input type="text" placeholder="Enter your email">
+                  <br>
+                  <button type="button">Notify Me</button><br>
+              <a href="join_page" target="_top">&#10148;Look for volunteering options</a><br>
+                  <a href="1234"><font size="5">&#10148;Careers in EQ</font></a>
+              <div ng-view></div>
+            </div>
+      </div>
+      <br><br><br>
+
+      <!-- contact -->
+      <div id="contact" class="section">
+            <div class="container">
+                  <h2>Have any ideas, doubts or stories to share?</h2>
+                  <h3>Our team would love to hear from you :) !</h3>
+                  <p>Email us at: eqandyou@gmail.com</p>
+                  <p>DM us on Instagram! at: EQandYOU</p>
+                  <img src="images/about.jpg" alt="">
+            </div>
+      </div>
+      <br><br><br>
+
+
+      <!-- footer -->
+      <footer>
+            <span>Copyright of mythilirajendra</span>
+      </footer>
+
+      <script src="js/script.js"></script>
+</body>
+</html>

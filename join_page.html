@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Arvo|Dancing+Script|Kalam|Kaushan+Script|Lobster|Pacifico|Permanent+Marker|Shadows+Into+Light&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="app.js"></script>
+	<style>
+.main{
+	padding:20px;
+}
+.main h1{
+	font-family: 'Pacifico', cursive;
+	font-size: 40px;
+	text-align:center;
+}
+h2{
+	font-family: 'Kaushan Script', cursive;
+	color: orange;
+}
+input{
+	font-family: 'Pacifico', cursive;
+	width: 60%;
+	font-size: 20px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	border: none;
+	border-bottom: 2px solid #767474;
+}
+input[type=submit] {
+	background-color: pink;
+  border: none;
+  border-radius:4px;
+  color: black;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size:25px;
+}
+</style>
+
+</head>
+<body>
+
+	<br>
+	<br>
+	<br>
+	<div class="container" >
+		<div class="row">
+		<div class="col-md-3">
+
+		</div>
+
+		<div class="col-md-6 main">
+			<center>
+			<form action="/sign_up" method="post">
+
+			<h1>Give us your details, and we'll contact you soon!</h1>
+			<br>
+				<h2>We won't share your details with anyone</h2>
+				<br><br>
+			<input class="box" type="text" name="name" id="name"
+			placeholder="Name" required /><br>
+
+			<input class="box" type="email" name="email" id="email"
+			placeholder="E-Mail " required /><br>
+
+			<input class="box" type="text" name="phone" id="phone"
+			placeholder="Phone Number " required/><br>
+						<br>
+			<input type="submit" id="submitDetails"
+			name="submitDetails" value="Submit" /><br>
+
+			</form>
+			</center>
+		</div>
+
+
+		<div class="col-md-3">
+		</div>
+
+	</div>
+	</div>
+</body>
+</html>
